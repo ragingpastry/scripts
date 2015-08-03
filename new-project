@@ -20,7 +20,6 @@ def create_project(project_name):
     rename_dir = root_dir + '/*/*_tests.py'
     for file in glob.glob(rename_dir):
         new_name = '/'.join(file.split('/')[:-1])
-        print new_name
         shutil.move(file,new_name + '/' + project_name + '_tests.py')
 
     for root, subdir, files in os.walk(root_dir):
