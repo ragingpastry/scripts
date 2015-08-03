@@ -29,6 +29,6 @@ def create_project(project_name):
                 print line.replace('NAME',project_name)
         
 
-create_project('test_function')
+create_project(args[0])
 
 
